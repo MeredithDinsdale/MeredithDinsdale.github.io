@@ -121,12 +121,10 @@ transition: .5s;}
               transition: 1s;
               color: white;
               font-size: 25px;
+              font-family: "raleway", sans-serif;
               }
               
-.contactLink:hover {
-                    color:#C3B29A;
-                    transform: scale(1.1);
-                    transition: 1s; }
+
 .resume {background-color: rgba(30, 41, 19, 0.24);}
 
 #angleDown {display: block;
@@ -150,6 +148,7 @@ transition: .5s;}
 @media screen and (max-width: 780px) {
 .contact {display: none}
 .contactSmall {align-content: center;}
+
 }
 /* .resume {margin-left: 5px;
          margin-right: 5px;}
@@ -157,4 +156,8 @@ transition: .5s;}
 
 @media screen and (min-width: 781px) {
 .contactSmall {display: none}
+.contactLink:hover {
+    color:#C3B29A;
+    transform: scale(1.1);
+    transition: 1s; }
 }
