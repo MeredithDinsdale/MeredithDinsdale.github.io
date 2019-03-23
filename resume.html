@@ -4,9 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -25,10 +23,12 @@ body {background-image: url("assets/images/profileBack2.jpg");
 </style>
 <br>
 <div class="container resume p-2">
-    <div class="row mt-3" id="resumeButtons">
+    <div class="row mt-1 mb-2" id="resumeButtons">
        
-        <a class="home ml-3" href="index.html"><h4><i class="fas fa-angle-left"></i> HOME</h4></a>  
-        <!-- <a class="download" href="" download><h4 class="download"><i class="fa fa-download"></i> PDF</h4></a> -->
+        <h4><a class="home" href="index.html"><i class="fas fa-angle-left"></i> HOME</a></h4>
+      
+        <a class="download" href="./assets/meredithResume.pdf" target="_blank" download><h4 class="download"><i class="fa fa-download"></i> PDF</h4></a>
+            
     </div>
       
   <div class="row">
@@ -37,8 +37,8 @@ body {background-image: url("assets/images/profileBack2.jpg");
       <br>
     </div>
   </div>
-
-  <div class="contactSmall">
+<!-- Small Screens============================================================================================== -->
+<div class="contactSmall">
     <div class="row">
       <div class="col text-center">
         <h2>Contact</h2>
@@ -54,13 +54,11 @@ body {background-image: url("assets/images/profileBack2.jpg");
             <a href="https://www.linkedin.com/in/meredithdinsdale/">  <i class="contactLink fab fa-linkedin-in p-3"></i></a>
             <br><br>
         </div>
-      </div>
-        <br>
-        
     </div>
-    
-    
-  
+  <br>       
+</div>
+       
+<!-- Large Screens=================================================================================================== -->
 
   <div class="row">
     <div class="col-md-4 contact">
@@ -74,8 +72,8 @@ body {background-image: url("assets/images/profileBack2.jpg");
   <div class="row">
     <div class="col-md-4 contact">
       <br>
-      <h4 class="contactLink text-center" id="phone"><i class="fas fa-phone"></i>
-      </h4>
+      <h4 class="contactLink text-center" id="phoneLg"></a><i class="fas fa-phone"></i>
+      </h4></a>
     </div>
     <div class="col-md-8">
       <br>
@@ -86,7 +84,7 @@ body {background-image: url("assets/images/profileBack2.jpg");
   <div class="row">
     <div class="col-md-4 contact">
       <br>
-      <h4 class="contactLink text-center" id="mail"><i class="far fa-envelope"></i>
+      <h4 class="contactLink text-center" id="mailLg"><i class="far fa-envelope"></i>
       </h4>
       
     </div>
@@ -98,7 +96,7 @@ body {background-image: url("assets/images/profileBack2.jpg");
 
   <div class="row">
     <div class="col-md-4 contact">
-        <h4 class="contactLink text-center" id="address"><i class="fas fa-home"></i> 
+        <h4 class="contactLink text-center" id="addressLg"><i class="fas fa-home"></i> 
         </h4></a>
         <br>
         <a href="https://github.com/MeredithDinsdale"><h4 class="contactLink text-center"><i class="fab fa-github"></i> 
@@ -184,21 +182,25 @@ body {background-image: url("assets/images/profileBack2.jpg");
 <br><br><br>
 <script>
     document.getElementById("mail").addEventListener("click", mailFunction);
-    
-    function mailFunction() {
-      document.getElementById("mail").innerHTML = "dinsdale.meredith@gmail.com";
+    document.getElementById("mailLg").addEventListener("click", mailFunction);
+    function mailFunction(event) {
+      event.target.innerHTML = " dinsdale.meredith@gmail.com";
+      console.log('envelope clicked')
     }
 
     document.getElementById("phone").addEventListener("click", phoneFunction);
-    
-    function phoneFunction() {
-      document.getElementById("phone").innerHTML = "(503) 970-7563";
+    document.getElementById("phoneLg").addEventListener("click", phoneFunction); 
+    function phoneFunction(event) {
+      event.target.setAttribute("href", "tel:+1-503-970-7563");
+      event.target.innerHTML = " (503)970-7563";
+      console.log('phone clicked')
     }
 
     document.getElementById("address").addEventListener("click", addressFunction);
-    
-    function addressFunction() {
-      document.getElementById("address").innerHTML = "East Moreland, Portland Oregon";
+    document.getElementById("addressLg").addEventListener("click", addressFunction);
+    function addressFunction(event) {
+      event.target.innerHTML = " SE Portland, Oregon";
+      console.log('house clicked')
     }
     </script>
 
