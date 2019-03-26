@@ -150,12 +150,23 @@ transition: .5s;}
 
 .download {float: right;}
 
+.carousel-caption {display: block;}
+
 .contactSmall {font-family: "raleway", sans-serif;}
 /* small screens=============================================== */
 @media screen and (max-width: 780px) {
 .contact {display: none}
 .carouselLarge {display:none}
 .contactSmall {align-content: center;}
+#caption {text-align: center;
+          width:45%;
+          font-size: 15px;
+          margin-right: 30vw;
+          }
+#captionHeading {font-size: 30px;
+                 margin-right: 30vw;
+                 text-align: center;
+                 width: 50%;}
 }
 /* large screens=============================================== */
 @media screen and (min-width: 781px) {
