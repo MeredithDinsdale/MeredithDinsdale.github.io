@@ -4,126 +4,172 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans333:200|Raleway:200|Roboto:200" rel="stylesheet">
+  
+  
 </head>
 <style>
-
-  body {background-image: url("assets/images/profileBack2.jpg");
-      background-position: center;  
-      background-size: cover; 
-      background-attachment: fixed; 
-  }
+body {background-image: url("assets/images/profileBack2.jpg");
+    background-position: center;  
+    background-size: cover; 
+    background-attachment: fixed; 
+}
 </style>
+
+
 <body>
-  <div class="container shady">
+
+<!-- Heading and Nav Links ======================================================================== -->
 <div class="container">
   <div class="row">
     <h1 class="ml-5 mt-4">Projects</h1>
   </div>
   <div class="row">
-    <a class="ml-5 mt-1" href="index.html"><h4 class="home"><i class="fas fa-angle-left"></i>
-      HOME</h4></a>
+    <a class="ml-5 mt-1" href="index.html">
+      <h4 class="home"><i class="fas fa-angle-left"></i>HOME</h4>
+    </a>
   </div>
 </div>
 
-<!-- Small Screens=============================================================================================== -->
-
-
-  <div class="row mt-3">
-
-    <div class="col mx-5">
-        <div class="bd-highlight">
-            <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselCaptions" data-slide-to="2"></li>
-                <li data-target="#carouselCaptions" data-slide-to="3"></li>
-              </ol>
-              <div class="carousel-inner">
-                <!--ISLAND-->
-                <div class="carousel-item active">
-                    <picture>
-                        <source media="(min-width: 780px)" srcset="./assets/images/islandWide.jpg">
-                        <source media="(max-width: 779px)" srcset="./assets/images/islandNarrow.jpg">
-                        <img src="./assets/images/islandWide.jpg" class="d-block" alt="Treasure Island Game Still">
-                    </picture>
-                  
-                  <div class="carousel-caption">
-                    <a href="https://meredithdinsdale.github.io/unit-4-game/" target="_blank"><h2 id="captionHeading">Treasure Island</h2></a>
-                    <div id='caption-wrapper'>
-                    <h5 id="caption">An island exploration puzzel game built using HTML, CSS, Bootstrap, and jQuery.</h5>
-                  </div>
-                  </div>
-                </div>
-               
-
-                  <!--PSYCHIC-->
-                <div class="carousel-item">
-                    <picture>
-                        <source media="(min-width: 780px)" srcset="./assets/images/psychicWide.jpg">
-                        <source media="(max-width: 779px)" srcset="./assets/images/psychicNarrow.jpg">
-                        <img src="./assets/images/psychicWide.jpg" class="d-block" alt="Alphabet Psychic Game Still">
-                    </picture>
-                  <div class="carousel-caption">
-                    <a href="https://meredithdinsdale.github.io/Psychic-Game/" target="_blank"><h2 id="captionHeading">Alphabet Psychic</h2></a>
-                    <h5 id="caption">A simple letter guess game built using HTML, CSS, Bootstrap and vanilla Javascript.</h5>
-                  </div>
-                </div>
-                
-                  <!--RACCOON-->
-                  <div class="carousel-item">
-                    <picture>
-                        <source media="(min-width: 780px)" srcset="./assets/images/raccoonWide.jpg">
-                        <source media="(max-width: 779px)" srcset="./assets/images/raccoonNarrow.jpg">
-                        <img src="./assets/images/raccoonWide.jpg" class="d-block" alt="Trivia Game">
-                    </picture>
-                  <div class="carousel-caption">
-                    <a href="https://meredithdinsdale.github.io/TriviaGame/" target="_blank"><h2 id="captionHeading">Raccoon Trivia</h2></a>
-                    <h5 id="caption">A trivia game built using HTML, CSS, Bootstrap and jQuery.</h5>
-                  </div>
-                </div>
-
-                <!--CAT-->
-                <div class="carousel-item">
-                  <picture>
-                      <source media="(min-width: 780px)" srcset="./assets/images/catWide.jpg">
-                      <source media="(max-width: 779px)" srcset="./assets/images/catNarrow.jpg">
-                      <img src="./assets/images/catWide.jpg" class="d-block" alt="Gif Generator">
-                  </picture>
-                <div class="carousel-caption">
-                  <a href="http://meredithdinsdale.github.io/giphy_generator/" target="_blank"><h2 id="captionHeading">Gif Generator</h2></a>
-                  <h5 id="caption">A gif generator utilizing the Giphy API, built with HTML, CSS, Bootstrap and jQuery.</h5>
-                </div>
-              </div>
-                
-              </div>
-              <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
+<!-- Treasure Island================================================================================ -->
+<div class="container">   
+  <div class="row pt-1">
+    <div class="col">
+        <a href="file:///C:/Users/Meredith/Documents/code/unit-4-game/index.html" target="_blank">
+          <img src="assets/images/islandSmall.jpg" alt="Treasure Hunting Game">
+          <div class="overlay">
+              <div class="text text-center">Treasure Island<br>HTML | CSS   Bootstrap | jQuery</div>
           </div>
+        </a>  
     </div>
-
+    <div class="col">
+      <br><br><br><br><br>
+      <h4>Treasure Island is a math game I built with jquery, with a fun user interface created with CSS and Bootstrap.</h4>
+    </div>
   </div>
+</div>
+<br><br><br>
 
+<!-- Psychic Game ================================================================================ -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <br><br><br><br><br><br><br>
+      <h4>This is a simple interactive guessing game built with javacript, and designed with CSS.</h4>
+    </div>
+    <div class="col">
+        <a href="https://meredithdinsdale.github.io/Psychic-Game/" target="_blank">
+          <img src="assets/images/psychic.jpg" alt="Letter Guess Game">
+          <div class="overlay">
+            <div class="text text-center">Letter Psychic<br>HTML | CSS | Bootstrap | Javascript</div>
+          </div>
+        </a> 
+    </div>
+  </div>
+</div>
+<br><br><br>
+
+<!-- Gif Generator ================================================================================ -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <a href="https://meredithdinsdale.github.io/giphy_generator/" target="_blank">
+        <img src="assets/images/train.JPG" alt="Gif Generator">
+        <div class="overlay">
+            <div class="text text-center"><h3>Train Scheduler<br>HTML | CSS | Bootstrap | jQuery | Firebase</div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+        <br><br><br><br><br>
+        <h4>A train schdule builder</h4>
+    </div>
+  </div>
+</div>
+<br><br><br>
+
+<!-- Trivia Game ================================================================================ -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+        <br><br><br><br><br>
+        <h4>A trivia game built with jQuery.</h4>
+    </div>
+    <div class="col">
+        <a href="https://meredithdinsdale.github.io/TriviaGame/" target="_blank">
+        <img src="assets/images/triviaGameStill.jpg" alt="Trivia Game">
+        <div class="overlay">
+            <div class="text text-center">Raccoon Trivia<br>HTML | CSS | Bootstrap | jQuery</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<br><br><br>
+
+<!-- LIRI Bot ================================================================================ -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <a href="https://github.com/MeredithDinsdale/liri-node-app" target="_blank">
+        <img src="assets/images/liri-still.png" alt="Liri Bot">
+        <div class="overlay">
+            <div class="text text-center"><h3>LIRI Bot<br>Node.js | API Integration</div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <br><br><br><br><br>
+      <h4>A Node.js app that queries various third party APIs to return requested user information.</h4>
+    </div>
+  </div>
+</div>
+<br><Br><br>
+
+<!-- AJA IoT ================================================================================ -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <br><br><br><br><br>
+        <h4>A mobile application with the ability to control a light and obtain temperature sensor data using a raspberry pi.</h4>
+    </div>
+    <div class="col">
+      <a href="https://sleepy-sea-48724.herokuapp.com" target="_blank">
+        <img src="assets/images/aja.png" alt="Aja">
+        <div class="overlay">
+            <div class="text text-center">Aja<br>Handlebars | CSS | Bootstrap | jQuery | MySQL | Passport.js</div>
+        </div>
+      </a>
+    </div>   
+  </div>
 </div>
 
+ <!-- GIA app ================================================================================ -->
+<div class="container">
+  <div class="row">
+      <div class="col">
+        <a href="https://meredithdinsdale.github.io/groupProject1/" target="_blank">
+          <img src="assets/images/gia.jpg" alt="GIA">
+          <div class="overlay">
+              <div class="text text-center">GIA<br>HTML | CSS | Bootstrap | jQuery | API Integration</div>
+          </div>
+        </a>
+      </div>
+   <div class="col">
+   <br><br><br><br><br>
+     <h4>An website that uses various third party APIs to show users information about a country they have searched for.</h4>
+   </div>
+  </div>
+</div>
 
- 
-  <br><Br>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
 </body>
 

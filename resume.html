@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -22,13 +24,11 @@ body {background-image: url("assets/images/profileBack2.jpg");
 }
 </style>
 <br>
-<div class="container shady p-2">
-    <div class="row mt-1 mb-2" id="resumeButtons">
+<div class="container resume p-2">
+    <div class="row mt-3" id="resumeButtons">
        
-        <h4 class="px-3"><a class="home" href="index.html"><i class="fas fa-angle-left"></i> HOME</a></h4>
-      
-        <h4 class="pl-5"><a class="download" href="./assets/meredithResume.pdf" target="_blank" download><i class="fa fa-download"></i> PDF</a></h4>
-            
+        <a class="home ml-3" href="index.html"><h4><i class="fas fa-angle-left"></i> HOME</h4></a>  
+        <!-- <a class="download" href="" download><h4 class="download"><i class="fa fa-download"></i> PDF</h4></a> -->
     </div>
       
   <div class="row">
@@ -37,43 +37,21 @@ body {background-image: url("assets/images/profileBack2.jpg");
       <br>
     </div>
   </div>
-<!-- Small Screens============================================================================================== -->
-<div class="contactSmall">
-    <div class="row">
-      <div class="col text-center">
-        <h2>Contact</h2>
-      </div>
-      <br><br>
-    </div>
-    <div class="row" >
-        <div class="col text-center">
-            <i id="phone" class="contactLink fas fa-phone p-3"></i>
-            <i id="mail" class="contactLink far fa-envelope p-3"></i>
-            <i id="address" class="contactLink fas fa-home p-3"></i></a>
-            <a href="https://github.com/MeredithDinsdale"><i class="contactLink fab fa-github p-3"></i></a>
-            <a href="https://www.linkedin.com/in/meredithdinsdale/">  <i class="contactLink fab fa-linkedin-in p-3"></i></a>
-            <br><br>
-        </div>
-    </div>
-  <br>       
-</div>
-       
-<!-- Large Screens=================================================================================================== -->
 
   <div class="row">
-    <div class="col-md-4 contact">
+    <div class="col-md-4">
       <h2 class="text-center" id="underline">Contact</h2>
     </div>
     <div class="col-md-8">
-      <h2>Qualifications</h2>
+      <h2 id="underline">Qualifications</h2>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-4 contact">
+    <div class="col-md-4">
       <br>
-      <h4 class="contactLink text-center" id="phoneLg"></a><i class="fas fa-phone"></i>
-      </h4></a>
+      <h4 class="contactLink text-center" id="phone"><i class="fas fa-phone"></i>
+      </h4>
     </div>
     <div class="col-md-8">
       <br>
@@ -82,22 +60,21 @@ body {background-image: url("assets/images/profileBack2.jpg");
   </div>
 
   <div class="row">
-    <div class="col-md-4 contact">
+    <div class="col-md-4">
       <br>
-      <h4 class="contactLink text-center" id="mailLg"><i class="far fa-envelope"></i>
+      <h4 class="contactLink text-center" id="mail"><i class="far fa-envelope"></i>
       </h4>
       
     </div>
     <div class="col-md-8">
-        <p>Full-Stack Web Development Bootcamp - University of Oregon, In Progress</p>
-        <p>Bachelor's of Science in Biology - Portland State University, 2015</p>
-        
+        <p>Full-Stack Web Development Bootcamp - University of Oregon, 2019</p>
+        <p>Bachelor's of Science Biology - Portland State University, 2015</p>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-4 contact">
-        <h4 class="contactLink text-center" id="addressLg"><i class="fas fa-home"></i> 
+    <div class="col-md-4">
+        <h4 class="contactLink text-center" id="address"><i class="fas fa-home"></i> 
         </h4></a>
         <br>
         <a href="https://github.com/MeredithDinsdale"><h4 class="contactLink text-center"><i class="fab fa-github"></i> 
@@ -108,7 +85,7 @@ body {background-image: url("assets/images/profileBack2.jpg");
     </div>
     <div class="col-md-4">
       <br>
-      <h5>Aquired Technical Abilities</h5>
+      <h4>Technical Abilities</h4>
           <ul>
             <li>HTML5</li>
             <li>CSS3</li>
@@ -116,20 +93,19 @@ body {background-image: url("assets/images/profileBack2.jpg");
             <li>Bootstrap</li>
             <li>Javascript</li>
             <li>jQuery</li>
-            <li>API Integration</li>
+            <li>RESTful API Integration</li>
             <li>Git Version Control</li>
-            <li>Command Line</li>
           </ul>
     </div>
     
     <div class="col-md-4">
         <br>
-        <h5>Technical Abilities in Progress</h5>
         <ul>
-          <li>React.js</li>
+          <li>Command Line</li>
+          <li>Express</li>
           <li>Node.js</li>
           <li>MySQL</li>
-          <li>Sass</li>
+          <li>MongoDB</li>
           <li>Wordpress</li>
           <li>SEO</li>
           <li>Photoshop</li>
@@ -138,7 +114,7 @@ body {background-image: url("assets/images/profileBack2.jpg");
     </div>
   </div>
 <br>
-  <div class="row p-3">
+  <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-8">
         <div class="row">
@@ -156,7 +132,7 @@ body {background-image: url("assets/images/profileBack2.jpg");
         </div>
         <div class="row" id="workExperience">
             <ul>
-              <li>On-boarding and management of a crew of over thirty team members</li>
+              <li>On-boarding and management of a crew of 30 team members</li>
               <li>Oversight of all cannabis handling and processing</li>
               <li>Project oversight for installation of OLCC licensed cannabis extraction facility</li>
               <li>Tracking of inventory, productivity and costs</li>
@@ -164,7 +140,6 @@ body {background-image: url("assets/images/profileBack2.jpg");
             </ul>
         </div>
         <div class="row" id="workExperience">
-          
           <h5>Townshend's Distillery | 2015-2017</h5>
         </div>
         <div class="row" id="workExperience">
@@ -172,24 +147,11 @@ body {background-image: url("assets/images/profileBack2.jpg");
         </div>
         <div class="row" id="workExperience">
           <ul>
-            <li>Responsible for all inventory tracking and reporting</li>
-            <li>Coordinated the bottling process and maintenance of production equipment</li>
-            <li>Frequently conducted distillery tours and spirits tastings for the public</li>
+            <li>Inventory tracking and reporting</li>
+            <li>Coordination of the bottling process and production supplies and equipment</li>
+            <li>Conducted distillery tours and tastings for customers</li>
           </ul>
         </div>
-        <div class="row" id="workExperience">
-        <h5>Brew Dr. Kombucha | 2014-2015</h5>
-          </div>
-          <div class="row" id="workExperience">
-            <p><i>Production Team Member</i></p>
-          </div>
-          <div class="row" id="workExperience">
-            <ul>
-              <li>Participated in post production processes including bottling and keg filling</li>
-              <li>Assisted with the general maintenance of brewery equipment</li>
-              <li>Operated the Brew Dr. Kombucha booth at the Portland Saturday Market and various other local events</li>
-            </ul>
-          </div>
     </div>
   </div>
 
@@ -197,25 +159,21 @@ body {background-image: url("assets/images/profileBack2.jpg");
 <br><br><br>
 <script>
     document.getElementById("mail").addEventListener("click", mailFunction);
-    document.getElementById("mailLg").addEventListener("click", mailFunction);
-    function mailFunction(event) {
-      event.target.innerHTML = " dinsdale.meredith@gmail.com";
-      console.log('envelope clicked')
+    
+    function mailFunction() {
+      document.getElementById("mail").innerHTML = "dinsdale.meredith@gmail.com";
     }
 
     document.getElementById("phone").addEventListener("click", phoneFunction);
-    document.getElementById("phoneLg").addEventListener("click", phoneFunction); 
-    function phoneFunction(event) {
-      event.target.setAttribute("href", "tel:+1-503-970-7563");
-      event.target.innerHTML = " (503)970-7563";
-      console.log('phone clicked')
+    
+    function phoneFunction() {
+      document.getElementById("phone").innerHTML = "(503) 970-7563";
     }
 
     document.getElementById("address").addEventListener("click", addressFunction);
-    document.getElementById("addressLg").addEventListener("click", addressFunction);
-    function addressFunction(event) {
-      event.target.innerHTML = " Southeast Portland, Oregon";
-      console.log('house clicked')
+    
+    function addressFunction() {
+      document.getElementById("address").innerHTML = "2756 SE Bybee Blvd, Portland Oregon";
     }
     </script>
 
